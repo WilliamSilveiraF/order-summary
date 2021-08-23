@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat:repeat-x;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    background-color: white;
+    border-radius: 20px;
+    width: 500px;
+}
+.listenMusic {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+}
+.paddingBox {
+    padding: 5%;
+}
+.boxtext {
+    text-align: center;
+}
+.boxtext > h1 {
+    font-size: 2rem; 
+}
+.boxtext > p {
+    font-size: 1rem; 
+}
+/* Box Do Change Plan */
+.changePlan {
+    margin: 15px auto;
+    max-width: 80%;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 20px;
+    padding: 12px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.iconmusicBox {
+    width: 47%;
+    display: flex;
+    justify-content: space-between;
+}
+.changeLink {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+/* Box Dos Butões */
+.boxBtn {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.procedBtn, .cancelBtn {
+    width: 80%;
+    padding: 15px 0px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 10px;
+    cursor: pointer;
+}
+.procedBtn {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+}
+.cancelBtn {
+    background-color: white;
+}
+.procedBtn:hover {
+    background-color: hsl(245, 75%, 65%);
+}
+@media (max-width: 500px) {
+    main {
+        background-color: hotpink;
+        width: 340px;
+    }
+    .annualPricebox > h3 {
+        font-size: 1rem;
+    }
+    .iconmusicBox > img {
+        transform: scale(0.75);
+    }
+}
